@@ -1,0 +1,31 @@
+.user-container{
+    background-color: rgb(196, 196, 23);
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(235, 225, 225);
+    flex-direction: column;
+    margin: 2rem;
+    height: 50vh;
+    gap: 1.5rem;
+    box-shadow:  10px 10px 10px rgb(93, 82, 82)
+}
+
+#userimg{
+    height: 50%;
+   
+}
+
+#username{
+   text-align: center;
+   font-weight: 900;
+   font-size: 2rem;
+}
+
+#userdesc{
+    text-align: center;
+       font-weight: 900;
+   font-size: 2rem;
+}
