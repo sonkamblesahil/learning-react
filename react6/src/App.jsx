@@ -7,16 +7,25 @@ import './App.css'
 function App() {
   const [isloggedin, setLoggedin] = useState(true)
 
-  //using if else statement
-  // if(isloggedin){
-  //    return(
-  //     <LoginBtn/>
-  //    )
-  // }else{
-  //     return(
-  //     <LogOutbtn/>
-  //     )
-  // } 
+  // using if else statement
+
+  if(isloggedin){
+     return(
+      <div>
+
+        <h1>Welcome to Homepage</h1>
+       <LoginBtn/>
+      </div>
+     )
+  }else{
+      return(
+        <div>
+
+          <h1>Welcome to Homepage</h1>
+          <LogOutbtn/>
+        </div>
+      )
+  } 
    
   //ternary operator
   // return(
@@ -26,18 +35,18 @@ function App() {
   // )
 
   //loical operaotr
- return (
-  <div>
-    <h1>Welcome to Homepage</h1>
-    <div>
-      {/* If isloggedin is true, show LogOutbtn */}
-      {isloggedin && <LogOutbtn />}
+//  return (
+//   <div>
+//     <h1>Welcome to Homepage</h1>
+//     <div>
+//       {/* If isloggedin is true, show LogOutbtn */}
+//       {isloggedin && <LogOutbtn />}
       
-      {/* If isloggedin is false, show LoginBtn */}
-      {!isloggedin && <LoginBtn />}
-    </div>
-  </div>
-);
+//       {/* If isloggedin is false, show LoginBtn */}
+//       {!isloggedin && <LoginBtn />}
+//     </div>
+//   </div>
+// );
 
 
 }
